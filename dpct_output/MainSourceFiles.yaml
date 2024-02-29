@@ -1,0 +1,1247 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          49
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          126
+    Length:          0
+    ReplacementText: "\n#include <chrono>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          351
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          396
+    Length:          0
+    ReplacementText: ', sycl::nd_item<3> item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          415
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          689
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          725
+    Length:          0
+    ReplacementText: ', sycl::nd_item<3> item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          764
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1023:0: The DPC++ sub-group does not support mask options for sycl::shift_group_left.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          781
+    Length:          32
+    ReplacementText: 'sycl::shift_group_left(item_ct1.get_sub_group(), value, i)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          838
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          875
+    Length:          0
+    ReplacementText: ', sycl::nd_item<3> item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          965
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1023:1: The DPC++ sub-group does not support mask options for sycl::permute_group_by_xor.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          982
+    Length:          31
+    ReplacementText: 'sycl::permute_group_by_xor(item_ct1.get_sub_group(), value, i)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1038
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1076
+    Length:          0
+    ReplacementText: ', sycl::nd_item<3> item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1084
+    Length:          15
+    ReplacementText: "/*\n    DPCT1078:2: Consider replacing memory_order::acq_rel with memory_order::seq_cst for correctness if strong memory order restrictions are needed.\n    */\n    sycl::ext::oneapi::atomic_fence(sycl::ext::oneapi::memory_order::acq_rel, sycl::ext::oneapi::memory_scope::device)"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1181
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1199
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1039:3: The generated code assumes that \"counter\" points to the global memory address space. If it points to a local memory address space, replace \"sycl::global_ptr\" with \"sycl::local_ptr\".\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1214
+    Length:          21
+    ReplacementText: 'sycl::atomic<int>(sycl::global_ptr<int>(counter)).fetch_add(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1241
+    Length:          0
+    ReplacementText: "/*\n    DPCT1065:4: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1248
+    Length:          37
+    ReplacementText: '(item_ct1.barrier(), sycl::any_of_group(item_ct1.get_group(), last == item_ct1.get_group_range(2)-1))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1291
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1407
+    Length:          0
+    ReplacementText: ",\n            sycl::nd_item<3> item_ct1, int *shArr"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1427
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1468
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1481
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1518
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1531
+    Length:          9
+    ReplacementText: 'item_ct1.get_group_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1711
+    Length:          30
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1770
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:5: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1850
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          1979
+    Length:          15
+    ReplacementText: "/*\n        DPCT1065:6: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n        */\n        item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2085
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2200
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2275
+    Length:          15
+    ReplacementText: "/*\n        DPCT1065:7: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n        */\n        item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2368
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2509
+    Length:          15
+    ReplacementText: "/*\n            DPCT1065:8: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n            */\n            item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2606
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2723
+    Length:          0
+    ReplacementText: ",\n             sycl::nd_item<3> item_ct1, int *shArr"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2743
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2784
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2797
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2834
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          2847
+    Length:          9
+    ReplacementText: 'item_ct1.get_group_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3028
+    Length:          30
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3249
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3256
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:9: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3368
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3526
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3632
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3753
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3867
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          3878
+    Length:          15
+    ReplacementText: "/*\n        DPCT1065:10: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n        */\n        item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4002
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4139
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4308
+    Length:          0
+    ReplacementText: "\n    dpct::device_ext &dev_ct1 = dpct::get_current_device();\n    sycl::queue &q_ct1 = dev_ct1.default_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4711
+    Length:          33
+    ReplacementText: 'd_vec = sycl::malloc_device<int>(N, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4750
+    Length:          42
+    ReplacementText: 'd_partial = sycl::malloc_device<int>(BLOCKS, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4798
+    Length:          49
+    ReplacementText: 'lastBlockCounter = sycl::malloc_device<int>(BLOCKS, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4853
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4896
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4921
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4927
+    Length:          10
+    ReplacementText: q_ct1.memset
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4971
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          4977
+    Length:          10
+    ReplacementText: q_ct1.memset
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5028
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5034
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5103
+    Length:          11
+    ReplacementText: 'sycl::event'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5127
+    Length:          0
+    ReplacementText: "\n    std::chrono::time_point<std::chrono::steady_clock> start_ct1;"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5128
+    Length:          29
+    ReplacementText: "    /*\n    DPCT1026:11: The call to cudaEventCreate was removed because this call is redundant in DPC++.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5157
+    Length:          28
+    ReplacementText: "    /*\n    DPCT1026:12: The call to cudaEventCreate was removed because this call is redundant in DPC++.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5186
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1012:13: Detected kernel execution time measurement pattern and generated an initial code for time measurements in SYCL. You can change the way time is measured depending on your goals.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5190
+    Length:          22
+    ReplacementText: "start_ct1 = std::chrono::steady_clock::now();\n    start = q_ct1.submit_barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5214
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:15: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5218
+    Length:          66
+    ReplacementText: "q_ct1.submit(\n      [&](sycl::handler &cgh) {\n        sycl::accessor<int, 1, sycl::access_mode::read_write, sycl::access::target::local> shArr_acc_ct1(sycl::range<1>(1024/*THREADS*/), cgh);\n\n        auto N_ct0 = N;\n\n        cgh.parallel_for(\n          sycl::nd_range<3>(sycl::range<3>(1, 1, BLOCKS) * sycl::range<3>(1, 1, THREADS), sycl::range<3>(1, 1, THREADS)), \n          [=](sycl::nd_item<3> item_ct1) {\n            reduce(N_ct0, d_vec, d_partial, lastBlockCounter, item_ct1, shArr_acc_ct1.get_pointer());\n          });\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5284
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5290
+    Length:          26
+    ReplacementText: 'stop.wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5322
+    Length:          46
+    ReplacementText: 'block_time = std::chrono::duration<float, std::milli>(stop_ct1 - start_ct1).count()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5374
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5419
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5444
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5450
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5499
+    Length:          10
+    ReplacementText: q_ct1.memset
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5543
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5549
+    Length:          10
+    ReplacementText: q_ct1.memset
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5600
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5606
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5632
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1012:14: Detected kernel execution time measurement pattern and generated an initial code for time measurements in SYCL. You can change the way time is measured depending on your goals.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5636
+    Length:          22
+    ReplacementText: "start_ct1 = std::chrono::steady_clock::now();\n    start = q_ct1.submit_barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5660
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1049:16: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5664
+    Length:          67
+    ReplacementText: "q_ct1.submit(\n      [&](sycl::handler &cgh) {\n        sycl::accessor<int, 1, sycl::access_mode::read_write, sycl::access::target::local> shArr_acc_ct1(sycl::range<1>(1024/*THREADS*/), cgh);\n\n        auto N_ct0 = N;\n\n        cgh.parallel_for(\n          sycl::nd_range<3>(sycl::range<3>(1, 1, BLOCKS) * sycl::range<3>(1, 1, THREADS), sycl::range<3>(1, 1, THREADS)), \n          [=](sycl::nd_item<3> item_ct1) [[intel::reqd_sub_group_size(32)]] {\n            reduce2(N_ct0, d_vec, d_partial, lastBlockCounter, item_ct1, shArr_acc_ct1.get_pointer());\n          });\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5731
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5737
+    Length:          26
+    ReplacementText: 'stop.wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5769
+    Length:          45
+    ReplacementText: 'wrap_time = std::chrono::duration<float, std::milli>(stop_ct1 - start_ct1).count()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5820
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5864
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5889
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          5895
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          6166
+    Length:          15
+    ReplacementText: 'sycl::free(d_vec, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          6187
+    Length:          19
+    ReplacementText: 'sycl::free(d_partial, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Offset:          6212
+    Length:          26
+    ReplacementText: 'sycl::free(lastBlockCounter, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+    Digest:          016f579d1567751f0ddc462c3a6152db
+DpctVersion:     2022.0.0
+MainHelperFileName: dpct
+USMLevel:        ''
+FeatureMap:
+  atomic.hpp:
+    atomic_fetch_add:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     atomic_fetch_add
+      SubFeatureMap:   {}
+  device.hpp:
+    dev_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dev_mgr
+      SubFeatureMap:
+        dev_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     dev_mgr
+          SubFeatureMap:   {}
+        dev_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     dev_mgr
+          SubFeatureMap:   {}
+        dev_mgr_3:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     dev_mgr
+          SubFeatureMap:   {}
+        dev_mgr_4:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     dev_mgr
+          SubFeatureMap:   {}
+        dev_mgr_check_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'dev_mgr::check_id'
+          SubFeatureMap:   {}
+        dev_mgr_current_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'dev_mgr::current_device'
+          SubFeatureMap:   {}
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'dev_mgr::current_device_id'
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     device_ext
+      SubFeatureMap:
+        device_ext_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     device_ext
+          SubFeatureMap:   {}
+        device_ext_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     device_ext
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'device_ext::default_queue'
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'device_ext::queues_wait_and_throw'
+          SubFeatureMap:   {}
+    exception_handler:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     exception_handler
+      SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    get_tid:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     get_tid
+      SubFeatureMap:   {}
+  dpct.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+  memory.hpp:
+    dpct_memcpy:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_3d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_2d_pitch_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_3d_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memcpy_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memcpy
+      SubFeatureMap:   {}
+    dpct_memset:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_2d_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_3d_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    dpct_memset_detail:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     dpct_memset
+      SubFeatureMap:   {}
+    mem_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     mem_mgr
+      SubFeatureMap:
+        mem_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     mem_mgr
+          SubFeatureMap:   {}
+        mem_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     mem_mgr
+          SubFeatureMap:   {}
+        mem_mgr_get_map_iterator:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'mem_mgr::get_map_iterator'
+          SubFeatureMap:   {}
+        mem_mgr_is_device_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'mem_mgr::is_device_ptr'
+          SubFeatureMap:   {}
+        mem_mgr_translate_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'mem_mgr::translate_ptr'
+          SubFeatureMap:   {}
+    memcpy_direction:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     memcpy_direction
+      SubFeatureMap:   {}
+    pitched_data:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     pitched_data
+      SubFeatureMap:
+        pitched_data_get_data_ptr:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'pitched_data::get_data_ptr'
+          SubFeatureMap:   {}
+        pitched_data_get_pitch:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'pitched_data::get_pitch'
+          SubFeatureMap:   {}
+        pitched_data_get_y:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+          FeatureName:     'pitched_data::get_y'
+          SubFeatureMap:   {}
+    pitched_data_1:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     pitched_data
+      SubFeatureMap:   {}
+    typedef_buffer_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     buffer_t
+      SubFeatureMap:   {}
+    typedef_byte_t:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/youss/Documentos/wrap_reduce/block_wrap_reduction.cu'
+      FeatureName:     byte_t
+      SubFeatureMap:   {}
+CompileTargets:  {}
+OptionMap:
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           ''
+    Specified:       false
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  CustomHelperFileName:
+    Value:           dpct
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitClNamespace:
+    Value:           'false'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionFlag:
+    Value:           '4294967295'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...
